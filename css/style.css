@@ -1,0 +1,693 @@
+/* Global */
+
+@font-face {
+    font-family: 'NovecentowideBookBold';
+    src: url('../font/Novecentowide-Bold-webfont.eot');
+    src: url('../font/Novecentowide-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Novecentowide-Bold-webfont.woff') format('woff'),
+         url('../font/Novecentowide-Bold-webfont.ttf') format('truetype'),
+         url('../font/Novecentowide-Bold-webfont.svg#NovecentowideBookBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NovecentowideBookRegular';
+    src: url('../font/Novecentowide-Book-webfont.eot');
+    src: url('../font/Novecentowide-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Novecentowide-Book-webfont.woff') format('woff'),
+         url('../font/Novecentowide-Book-webfont.ttf') format('truetype'),
+         url('../font/Novecentowide-Book-webfont.svg#NovecentowideBookRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideLightBold';
+    src: url('../font/Novecentowide-DemiBold-webfont.eot');
+    src: url('../font/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Novecentowide-DemiBold-webfont.woff') format('woff'),
+         url('../font/Novecentowide-DemiBold-webfont.ttf') format('truetype'),
+         url('../font/Novecentowide-DemiBold-webfont.svg#NovecentowideLightBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideNormalRegular';
+    src: url('../font/Novecentowide-Normal-webfont.eot');
+    src: url('../font/Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Novecentowide-Normal-webfont.woff') format('woff'),
+         url('../font/Novecentowide-Normal-webfont.ttf') format('truetype'),
+         url('../font/Novecentowide-Normal-webfont.svg#NovecentowideNormalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'NovecentowideNormalRegular', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: 333;
+	background-color:#ffffff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+a {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 100%;
+	line-height: 150%;
+}
+
+
+/*
+RESPONSIVE NAVIGATION
+*/
+
+.logo {
+	float: left;
+	height: 75px;
+	margin-left: 25px;
+}
+
+.top-wrap {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color: rgba(255,255,255,.95);
+	z-index:100;
+}
+
+.top-inner {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.contato {
+}
+
+.contato input, .contato textarea{
+	display: block;
+	border-radius: 5px;
+	border: 2px solid #e9e9e2;
+	padding: 10px;
+	margin-bottom: 7px;
+	font-family: 'NovecentowideNormalRegular', sans-serif;
+	width: 100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.contato textarea {
+	height: 80px;
+}
+
+.contato button {
+	background: #856994;
+	border-radius: 5px;
+	color: #fff;
+	border: none;
+	padding: 10px 30px;
+	float: right;
+	font-family: 'NovecentowideLightBold', sans-serif;
+}
+
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Basic Styles */
+
+
+nav {
+	float: right;
+	padding-top: 15px;
+	margin-right: 25px;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	height: 35px;
+}
+nav li {
+	display: inline;
+	float: left;
+	font-size: 90%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav a {
+	color: #333;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 35px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	font-family: 'NovecentowideNormalRegular', sans-serif;
+}
+nav li a {
+	border: 1px solid rgba(255,255,255,0);
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover {
+	color: #ccc;
+}
+nav a#pull {
+	display: none;
+}
+
+nav li.active a{
+	border-bottom: 1px solid #53545b;
+	color: #000;
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	nav {
+		border-bottom: 0;
+		width:100%;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	
+	nav li a {
+		border-right: 0;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}
+}
+
+/* END RESPONSIVE NAIGATION */
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height: 700px;
+	padding-top: 130px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+/* Slide 1 */ 
+
+#slide1{
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+#slide1 h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	font-size: 400%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.proximo a{
+	display: block;
+	margin: 100px auto 0 auto;
+	width: 200px;
+	padding: 15px 0;
+	border: 1px solid #fff;
+	text-align: center;
+	color: #fff;
+}
+
+.line {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/* Slide 2 */ 
+
+#slide2{
+	background: url(../images/produtos.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+
+
+
+/* Slide 3 */ 
+
+#slide3{
+	background: url(../images/agricultor.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+
+
+
+/* Slide 4 */
+
+#slide4{
+	color:#ffffff;
+	background: url(../images/wood.jpg);
+	height: auto;
+	text-align: center;
+}
+
+#slide4 h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	font-size: 400%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#slide4 h2 {
+	font-family: 'Josefin Slab', serif;
+	text-transform: uppercase;
+}
+
+.receita {
+	background: #fff;
+	color: #666;
+	-moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.5);
+	box-shadow:         0px 1px 2px 0px rgba(0,0,0,.5);
+	margin-bottom: 20px;
+}
+
+.receita-inner {
+	padding: 0 20px 15px 20px;
+}
+
+.receita a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 80%;
+	background: #79d29c;
+	color: #fff;
+}
+
+.receita a:hover {
+	background: #666;
+}
+
+#slide4 h3 {
+	font-size: 85%;
+	text-align: center;
+	font-family: 'NovecentowideBookRegular', sans-serif;
+}
+
+#slide4 p {
+	font-size: 80%;
+	font-family: 'NovecentowideBookRegular', sans-serif;
+}
+
+.titulos {
+	margin-bottom: 40px;
+}
+
+.receitas img {
+	width: 100%;
+}
+
+.receita1 {
+	display: none;
+}
+
+#slide4 h2 {
+	margin-top: 15px;
+}
+
+/* Slide 5 */ 
+
+#slide5{
+	background: url('../images/clube.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	text-shadow: 0 1px 1px #000;
+	padding-top: 80px;
+	color: #fff;
+}
+
+/* Slide 6 */ 
+
+#slide6{
+	background-attachment: fixed;
+	width:100%;
+	height: 1050px;
+	position: relative;
+	overflow: hidden;
+	padding-top: 0;
+	
+}
+
+#map {
+	height: 300px;
+	margin-bottom: 40px;
+	background: red;
+}
+
+#slide6 h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	font-size: 400%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#slide6 h3 {
+	font-size: 85%;
+	text-align: center;
+	font-family: 'NovecentowideBookRegular', sans-serif;
+	margin-bottom: 15px;
+}
+
+#slide6 h4 {
+	margin-bottom: 15px;
+}
+
+.titulos h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	font-size: 400%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.titulos h3 {
+	font-size: 85%;
+	text-align: center;
+	font-family: 'NovecentowideBookRegular', sans-serif;
+}
+
+
+ul.contato-info li {
+	padding: 8px 0;
+	padding-left: 35px;
+}
+
+	ul.contato-info li:first-child {
+		background: url(../images/sprite_contato.png) no-repeat 0 0;
+	}
+	ul.contato-info li:nth-child(2) {
+		background: url(../images/sprite_contato.png) no-repeat 0 -28px;
+	}
+	ul.contato-info li:last-child {
+		background: url(../images/sprite_contato.png) no-repeat 0 -58px;
+	}
+
+.social {
+	text-align: center;
+}
+
+.social a {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.social a img {
+	
+}
+
+.social-bar {
+	background: url(../images/paper.jpg);
+	padding: 40px 0;
+	margin-top: 40px;
+}
+
+.social-bar h1 {
+	font-size: 300%!important;
+	margin-bottom: 10px;
+}
+
+.social-bar .titulos {
+	margin-bottom: 10px;
+}
+
+.social a span {
+	padding-top: 5px;
+	display: block;
+	font-size: 80%;
+}
+
+.social a:hover span {
+	color: #000;
+}
+
+
+.clube_wrap {
+	padding: 70px 0 0 0;
+}
+
+.box {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 10;
+}
+
+/* Slide 7 */ 
+
+#slide7{
+	background: url(../images/bg_quem.jpg);
+	background-attachment: fixed;
+	width:100%;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	padding-top: 0;
+}
+
+.villa-footer {
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+#slide_receita {
+	background: url(../images/wood.jpg);
+	height:150px;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+}
+
+
+
+
+
+
+
