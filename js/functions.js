@@ -32,10 +32,10 @@
         duration: 4000
     });
 	
-// Lightbox
+// Lightbox receitas
 
 $('.veja-receita').click(function(e) {
-    $('.receita1').lightbox_me({
+    $('.receita-single').lightbox_me({
         centered: true,
 		overlayCSS: {
 			background: '#79d29c',

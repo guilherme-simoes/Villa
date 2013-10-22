@@ -78,7 +78,7 @@ a {
 }
 
 h1 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Josefin Slab', serif;
 }
 
 h1, h2, h3, h4 {
@@ -429,12 +429,34 @@ nav li.active a{
 	margin-bottom: 40px;
 }
 
-.receitas img {
+.receitas img, .receita-single img {
 	width: 100%;
 }
 
-.receita1 {
+.receita-single {
 	display: none;
+	color: #fff;
+}
+
+.receita-single h1 {
+	font-size: 250%;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.receita-single ul li {
+	padding: 10px 0;
+	font-size: 90%;
+}
+
+.receita-single ul li:last-child, .receita-single ul li:first-child {
+	padding: 0;
+}
+
+.receita-part {
+	padding: 5px 5px 10px 5px;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+	margin-bottom: 10px;
 }
 
 #slide4 h2 {
