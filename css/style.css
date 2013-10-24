@@ -436,20 +436,23 @@ nav li.active a{
 .receita-single {
 	display: none;
 	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	overflow: auto;
 }
 
 .receita-single h1 {
 	font-size: 250%;
 	text-transform: uppercase;
 	margin-bottom: 15px;
+	padding-top: 10px;
 }
 
 .receita-single ul li {
-	padding: 10px 0;
+	padding: 5px 0;
 	font-size: 90%;
 }
 
-.receita-single ul li:last-child, .receita-single ul li:first-child {
+.receita-single ul li:first-child {
 	padding: 0;
 }
 
@@ -457,6 +460,35 @@ nav li.active a{
 	padding: 5px 5px 10px 5px;
 	border-bottom: 1px solid rgba(255,255,255,.5);
 	margin-bottom: 10px;
+}
+
+.close {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/fechar.png);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	/* Firefox */
+	-moz-transition: all .5s ease;
+	/* WebKit */
+	-webkit-transition: all .5s ease;
+	/* Opera */
+	-o-transition: all .5s ease;
+	/* Standard */
+	transition: all .5s ease;
+}
+
+.close:hover {
+	/* Firefox */
+		-moz-transform: rotate(90deg);
+		/* WebKit */
+		-webkit-transform: rotate(90deg);
+		/* Opera */
+		-o-transform: rotate(90deg);
+		/* Standard */
+		transform: rotate(90deg);
 }
 
 #slide4 h2 {
