@@ -36,11 +36,22 @@
 
 $('.veja-receita').click(function(e) {
     $('.receita-single').lightbox_me({
-        centered: true,
+		centered: true,
 		overlayCSS: {
 			background: '#79d29c',
 			opacity: .95
 		}
         });
     e.preventDefault();
+	$('.receita-single')('reposition');
 });
+
+// Slider
+
+$(function() {
+    $(".rslides").responsiveSlides({
+    	nav: true,
+		auto: false,
+		pager: true
+    });
+  });
