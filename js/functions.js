@@ -32,26 +32,15 @@
         duration: 4000
     });
 	
-// Lightbox receitas
+// Lightbox
 
 $('.veja-receita').click(function(e) {
-    $('.receita-single').lightbox_me({
-		centered: true,
+    $('.receita1').lightbox_me({
+        centered: true,
 		overlayCSS: {
 			background: '#79d29c',
 			opacity: .95
 		}
         });
     e.preventDefault();
-	$('.receita-single')('reposition');
 });
-
-// Slider
-
-$(function() {
-    $(".rslides").responsiveSlides({
-    	nav: true,
-		auto: false
-    });
-  });
-  
