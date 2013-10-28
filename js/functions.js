@@ -51,7 +51,7 @@ $('.veja-receita').click(function(e) {
 $(function() {
     $(".rslides").responsiveSlides({
     	nav: true,
-		auto: false,
-		pager: true
+		auto: false
     });
   });
+  
