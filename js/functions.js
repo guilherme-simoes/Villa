@@ -23,14 +23,7 @@
 
 	// O Villa
 	
-    $("#slide1").backstretch([
-      "images/foto_banner_feijao.jpg",
-      "images/foto_banner_caixa.jpg",
-      "images/foto_banner_parede.jpg"
-    ], {
-        fade: 750,
-        duration: 4000
-    });
+    
 	
 // Lightbox receitas
 

@@ -191,6 +191,18 @@ li.social-menu a {
 	width: 28px;
 	padding: 0;
 }
+.container-special {
+	width: 90%; /*width: 1000px;*/
+	max-width: 1200px;
+	margin: auto;
+}
+
+.quadro {
+	padding: 0 5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
 
 	li.social-menu a:first-child {
 		background: url(../images/facebook-mini.png) no-repeat center top;
@@ -316,6 +328,8 @@ li.social-menu a {
 #slide1{
 	color: #fff;
 	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	background: url(../images/bg_quem.jpg);
+	height: auto;
 }
 
 .proximo a{
